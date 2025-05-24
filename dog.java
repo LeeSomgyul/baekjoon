@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-public class Main {
+public class dog {
     public static void main(String[] args) {
         System.out.println("|\\_/|");
         System.out.println("|q p|   /}");
