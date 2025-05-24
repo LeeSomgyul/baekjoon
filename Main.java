@@ -5,14 +5,9 @@ public class Main {
         Scanner scan = new Scanner(System.in);
 
         int a = scan.nextInt();
-        int b = scan.nextInt();
 
-        if (a < b) {
-            System.out.println("<");
-        } else if (a == b) {
-            System.out.println("==");
-        } else {
-            System.out.println(">");
+        for (int i = 1; i <= 9; i++) {
+            System.out.println(a + " * " + i + " = " + a * i);
         }
     }
 }
