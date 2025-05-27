@@ -1,12 +1,10 @@
 import java.util.Scanner;
 
-public class aPlusB {
+public class aPlusB_4 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int T = scan.nextInt();
-
-        for (int i = 0; i < T; i++) {
+        while (scan.hasNext()) {
             int A = scan.nextInt();
             int B = scan.nextInt();
 
