@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class examScore {
+public class examScore_9498 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 

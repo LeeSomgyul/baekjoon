@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class fourBasicOperations {
+public class fourBasicOperations_10869 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
