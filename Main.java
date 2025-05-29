@@ -4,24 +4,20 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int[] arr = new int[9];
+        int N = Integer.parseInt(scan.nextLine());
+        String[] parts = scan.nextLine().split(" ");
 
-        int max = arr[0];
-        int index = 0;
+        int max = Integer.parseInt(parts[0]);
+        int min = max;
 
-        for (int i = 0; i < 9; i++) {
-            int N = scan.nextInt();
-            arr[i] += N;
+        for (int i = 0; i < N; i++) {
+            int num = Integer.parseInt(parts[i]);
+            if (num > max)
+                max = num;
+            if (num < min)
+                min = num;
         }
 
-        for (int i = 0; i < 9; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
-                index = i + 1;
-            }
-        }
-
-        System.out.println(max);
-        System.out.println(index);
+        System.out.print(min + " " + max);
     }
 }
