@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class stringRepetition_2675 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
