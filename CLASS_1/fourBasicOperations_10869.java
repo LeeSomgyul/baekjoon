@@ -1,3 +1,5 @@
+package CLASS_1;
+
 import java.util.Scanner;
 
 public class fourBasicOperations_10869 {

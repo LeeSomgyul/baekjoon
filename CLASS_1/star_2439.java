@@ -1,3 +1,4 @@
+package CLASS_1;
 /*
 //1️⃣ 기본적인 반복문 사용
 import java.util.Scanner;

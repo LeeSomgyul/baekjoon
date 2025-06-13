@@ -1,3 +1,4 @@
+package CLASS_1;
 
 //🔥 더 간단한 코드
 import java.util.Scanner;
