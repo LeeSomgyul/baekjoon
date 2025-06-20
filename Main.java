@@ -5,18 +5,19 @@ public class Main {
         Scanner scan = new Scanner(System.in);
 
         int N = scan.nextInt();
-        int V = 1;
-        int result = 1;
+        scan.nextLine();
 
-        while (N > V) {
-            V += 6 * result;
-            result += 1;
+        String S = scan.next();
+        long result = 0;
+        long pow = 1;
+
+        for (int i = 0; i < N; i++) {
+            int ch = S.charAt(i) - 'a' + 1;
+            result = (result + ch * pow) % 1234567891;
+            pow = (pow * 31) % 1234567891;
         }
 
-        if (N == 1) {
-            System.out.println(1);
-        } else {
-            System.out.println(result);
-        }
+        System.out.println(result);
+
     }
 }
