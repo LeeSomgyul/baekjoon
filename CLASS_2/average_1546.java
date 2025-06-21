@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class average_1546 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -8,7 +8,6 @@ public class Main {
         int[] arr = new int[N];
 
         int max = 0;
-        double sum = 0;
 
         for (int i = 0; i < N; i++) {
             arr[i] = scan.nextInt();
@@ -17,6 +16,9 @@ public class Main {
                 max = arr[i];
             }
         }
+
+        // 🔥정수형으로 하면 / 했을 때 값이 0이 되어버림
+        double sum = 0;
 
         for (int i = 0; i < N; i++) {
             double newScore = ((double) arr[i] / max) * 100;
